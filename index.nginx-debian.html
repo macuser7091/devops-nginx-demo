@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Discover Japan | Beyond the Ordinary</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+      color: #1a1a1a;
+      line-height: 1.6;
+    }
+
+    /* Navbar */
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0,0,0,0.75);
+      color: #fff;
+      padding: 14px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 1.3rem;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 24px;
+      font-size: 0.95rem;
+    }
+
+    /* Hero */
+    .hero {
+      height: 100vh;
+      background:
+        linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
+        url("https://images.unsplash.com/photo-1549693578-d683be217e58");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+
+    .hero h2 {
+      font-size: 3.8rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+
+    .hero p {
+      margin-top: 18px;
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 14px 36px;
+      background: #c81d25;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-size: 1rem;
+    }
+
+    /* Sections */
+    section {
+      padding: 90px 10%;
+      text-align: center;
+    }
+
+    section h3 {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+    }
+
+    section p {
+      max-width: 800px;
+      margin: auto;
+      color: #444;
+    }
+
+    .light {
+      background: #f6f6f6;
+    }
+
+    /* Grid */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 30px;
+      margin-top: 50px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    .card h4 {
+      margin-bottom: 10px;
+      font-size: 1.3rem;
+    }
+
+    /* Experience */
+    .experience-list {
+      list-style: none;
+      margin-top: 30px;
+    }
+
+    .experience-list li {
+      margin: 12px 0;
+      font-size: 1.05rem;
+    }
+
+    /* Packages */
+    .price {
+      font-size: 2rem;
+      color: #c81d25;
+      margin: 10px 0;
+    }
+
+    .highlight {
+      border: 2px solid #c81d25;
+    }
+
+    /* CTA */
+    .cta {
+      background:
+        linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+        url("https://images.unsplash.com/photo-1505066936464-cbb04f7f8bb4");
+      background-size: cover;
+      background-position: center;
+      color: white;
+    }
+
+    /* Contact */
+    form {
+      max-width: 500px;
+      margin: 40px auto 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    input, textarea {
+      padding: 14px;
+      margin: 10px 0;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 14px;
+      background: #c81d25;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    footer {
+      background: #111;
+      color: #aaa;
+      padding: 25px;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Discover Japan</h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#places">Places</a>
+    <a href="#packages">Packages</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div>
+    <h2>JAPAN</h2>
+    <p>Tradition. Technology. Timeless beauty.</p>
+    <a href="#places" class="btn">Explore Japan</a>
+  </div>
+</section>
+
+<section id="about">
+  <h3>Why Japan?</h3>
+  <p>
+    Japan isn’t a destination — it’s a contrast. Ancient temples beside neon cities,
+    discipline mixed with creativity, silence and chaos coexisting perfectly.
+    This journey is for people who want more than photos.
+  </p>
+</section>
+
+<section id="places" class="light">
+  <h3>Must-Visit Places</h3>
+  <div class="grid">
+    <div class="card">
+      <h4>:contentReference[oaicite:1]{index=1}</h4>
+      <p>Ultra-modern city with endless energy, tech, nightlife, and culture.</p>
+    </div>
+    <div class="card">
+      <h4>:contentReference[oaicite:2]{index=2}</h4>
+      <p>Temples, shrines, geishas, and traditional Japan at its finest.</p>
+    </div>
+    <div class="card">
+      <h4>:contentReference[oaicite:3]{index=3}</h4>
+      <p>Street food, friendly locals, and raw urban vibes.</p>
+    </div>
+    <div class="card">
+      <h4>:contentReference[oaicite:4]{index=4}</h4>
+      <p>Japan’s sacred icon and a once-in-a-lifetime view.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h3>Experiences</h3>
+  <ul class="experience-list">
+    <li>✔ Bullet train (Shinkansen) journeys</li>
+    <li>✔ Temple stays & Zen experiences</li>
+    <li>✔ Street food & ramen tours</li>
+    <li>✔ Anime, gaming & tech districts</li>
+  </ul>
+</section>
+
+<section id="packages" class="light">
+  <h3>Travel Packages</h3>
+  <div class="grid">
+    <div class="card">
+      <h4>Explorer</h4>
+      <p class="price">¥120,000</p>
+      <p>5 Days • Tokyo & Osaka • Budget Friendly</p>
+    </div>
+    <div class="card highlight">
+      <h4>Classic Japan</h4>
+      <p class="price">¥220,000</p>
+      <p>8 Days • Tokyo, Kyoto, Fuji • Best Value</p>
+    </div>
+    <div class="card">
+      <h4>Elite Japan</h4>
+      <p class="price">¥380,000</p>
+      <p>14 Days • Custom Route • Luxury Stay</p>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <h3>Ready to Experience Japan?</h3>
+  <p>Stop dreaming. Start planning.</p>
+  <a href="#contact" class="btn">Contact Us</a>
+</section>
+
+<section id="contact">
+  <h3>Get in Touch</h3>
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message"></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  © 2026 Discover Japan. Crafted for real travelers.
+</footer>
+
+</body>
+</html>
+
